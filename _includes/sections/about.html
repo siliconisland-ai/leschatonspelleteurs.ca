@@ -1,3 +1,26 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+</style>
+</head>
+
 <div class="container" id="i18_about_me">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
@@ -18,109 +41,112 @@
         </div>
         {% endfor %}
         <!-- avatar -->
-        <div class="col-xs-4">
+        <!-- div class="col-xs-4"> -->
           <div class="team-member wow zoomIn">
-	    
-                <img src="{{ site.laurence.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.laurence.first_name }}</span> {{ site.laurence.last_name }}</h4>
-                <ul class="list-inline social-icon">
-                    {% if site.laurence.github_username %}
-                    <li><a href="https://github.com/{{ site.laurence.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
-                    {% endif %}
-                    {% if site.laurence.linkedin_id %}
-                    <li><a href="https://www.linkedin.com/in/{{ site.laurence.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                    {% endif %}
-                    {% if site.laurence.facebook_username %}
-                    <li><a href="https://www.facebook.com/{{ site.laurence.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
-                    {% endif %}
-                    {% if site.laurence.twitter_username %}
-                    <li><a href="https://twitter.com/{{ site.laurence.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
-                    {% endif %}
-                    {% if site.laurence.email %}
-                    <li><a href="mailto:{{ site.laurence.email }}"><i class="fa fa-envelope-o"></i></a></li>
-                    {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
-                    {% if site.laurence.cv %}
-                    <li><a href="{{ site.laurence.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
-                    {% endif %}
-               
-
-	   <img src="{{ site.antoine.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.antoine.first_name }}</span> {{ site.antoine.last_name }}</h4>
-                <ul class="list-inline social-icon">
-                    {% if site.antoine.github_username %}
-                    <li><a href="https://github.com/{{ site.antoine.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
-                    {% endif %}
-                    {% if site.antoine.linkedin_id %}
-                    <li><a href="https://www.linkedin.com/in/{{ site.antoine.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                    {% endif %}
-                    {% if site.antoine.facebook_username %}
-                    <li><a href="https://www.facebook.com/{{ site.antoine.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
-                    {% endif %}
-                    {% if site.antoine.twitter_username %}
-                    <li><a href="https://twitter.com/{{ site.antoine.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
-                    {% endif %}
-                    {% if site.antoine.email %}
-                    <li><a href="mailto:{{ site.antoine.email }}"><i class="fa fa-envelope-o"></i></a></li>
-                    {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
-                    {% if site.antoine.cv %}
-                    <li><a href="{{ site.antoine.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
-                    {% endif %}
-                
-
-		 <img src="{{ site.francis.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.francis.first_name }}</span> {{ site.francis.last_name }}</h4>
-                <ul class="list-inline social-icon">
-                    {% if site.francis.github_username %}
-                    <li><a href="https://github.com/{{ site.francis.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
-                    {% endif %}
-                    {% if site.francis.linkedin_id %}
-                    <li><a href="https://www.linkedin.com/in/{{ site.francis.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                    {% endif %}
-                    {% if site.francis.facebook_username %}
-                    <li><a href="https://www.facebook.com/{{ site.francis.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
-                    {% endif %}
-                    {% if site.francis.twitter_username %}
-                    <li><a href="https://twitter.com/{{ site.francis.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
-                    {% endif %}
-                    {% if site.francis.email %}
-                    <li><a href="mailto:{{ site.francis.email }}"><i class="fa fa-envelope-o"></i></a></li>
-                    {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
-                    {% if site.francis.cv %}
-                    <li><a href="{{ site.francis.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
-                    {% endif %}
-
-		    <img src="{{ site.bellemarie.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.bellemarie.first_name }}</span> {{ site.bellemarie.last_name }}</h4>
-                <ul class="list-inline social-icon">
-                    {% if site.bellemarie.github_username %}
-                    <li><a href="https://github.com/{{ site.bellemarie.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
-                    {% endif %}
-                    {% if site.bellemarie.linkedin_id %}
-                    <li><a href="https://www.linkedin.com/in/{{ site.bellemarie.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                    {% endif %}
-                    {% if site.bellemarie.facebook_username %}
-                    <li><a href="https://www.facebook.com/{{ site.bellemarie.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
-                    {% endif %}
-                    {% if site.bellemarie.twitter_username %}
-                    <li><a href="https://twitter.com/{{ site.bellemarie.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
-                    {% endif %}
-                    {% if site.bellemarie.email %}
-                    <li><a href="mailto:{{ site.bellemarie.email }}"><i class="fa fa-envelope-o"></i></a></li>
-                    {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
-                    {% if site.bellemarie.cv %}
-                    <li><a href="{{ site.bellemarie.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
-                    {% endif %}
-          
-		    
-		    
-                </ul>
-            
+            <div class="row">
+                <div class="column">
+                    <img src="{{ site.laurence.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                        <h4><span class="navy">{{ site.laurence.first_name }}</span> {{ site.laurence.last_name }}</h4>
+                        <ul class="list-inline social-icon">
+                            {% if site.laurence.github_username %}
+                            <li><a href="https://github.com/{{ site.laurence.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                            {% endif %}
+                            {% if site.laurence.linkedin_id %}
+                            <li><a href="https://www.linkedin.com/in/{{ site.laurence.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                            {% endif %}
+                            {% if site.laurence.facebook_username %}
+                            <li><a href="https://www.facebook.com/{{ site.laurence.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if site.laurence.twitter_username %}
+                            <li><a href="https://twitter.com/{{ site.laurence.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.laurence.email %}
+                            <li><a href="mailto:{{ site.laurence.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                            {% endif %}
+                            <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
+                            {% if site.laurence.cv %}
+                            <li><a href="{{ site.laurence.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div> 
+                </div>   
+	            <div class="column">
+                    <img src="{{ site.antoine.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                        <h4><span class="navy">{{ site.antoine.first_name }}</span> {{ site.antoine.last_name }}</h4>
+                        <ul class="list-inline social-icon">
+                            {% if site.antoine.github_username %}
+                            <li><a href="https://github.com/{{ site.antoine.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                            {% endif %}
+                            {% if site.antoine.linkedin_id %}
+                            <li><a href="https://www.linkedin.com/in/{{ site.antoine.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                            {% endif %}
+                            {% if site.antoine.facebook_username %}
+                            <li><a href="https://www.facebook.com/{{ site.antoine.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if site.antoine.twitter_username %}
+                            <li><a href="https://twitter.com/{{ site.antoine.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.antoine.email %}
+                            <li><a href="mailto:{{ site.antoine.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                            {% endif %}
+                            <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
+                            {% if site.antoine.cv %}
+                            <li><a href="{{ site.antoine.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+		        <div class="column">
+                    <img src="{{ site.francis.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                        <h4><span class="navy">{{ site.francis.first_name }}</span> {{ site.francis.last_name }}</h4>
+                        <ul class="list-inline social-icon">
+                            {% if site.francis.github_username %}
+                            <li><a href="https://github.com/{{ site.francis.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                            {% endif %}
+                            {% if site.francis.linkedin_id %}
+                            <li><a href="https://www.linkedin.com/in/{{ site.francis.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                            {% endif %}
+                            {% if site.francis.facebook_username %}
+                            <li><a href="https://www.facebook.com/{{ site.francis.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if site.francis.twitter_username %}
+                            <li><a href="https://twitter.com/{{ site.francis.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.francis.email %}
+                            <li><a href="mailto:{{ site.francis.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                            {% endif %}
+                            <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
+                            {% if site.francis.cv %}
+                            <li><a href="{{ site.francis.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+		        </div>
+                    <img src="{{ site.bellemarie.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                        <h4><span class="navy">{{ site.bellemarie.first_name }}</span> {{ site.bellemarie.last_name }}</h4>
+                        <ul class="list-inline social-icon">
+                            {% if site.bellemarie.github_username %}
+                            <li><a href="https://github.com/{{ site.bellemarie.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                            {% endif %}
+                            {% if site.bellemarie.linkedin_id %}
+                            <li><a href="https://www.linkedin.com/in/{{ site.bellemarie.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                            {% endif %}
+                            {% if site.bellemarie.facebook_username %}
+                            <li><a href="https://www.facebook.com/{{ site.bellemarie.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if site.bellemarie.twitter_username %}
+                            <li><a href="https://twitter.com/{{ site.bellemarie.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.bellemarie.email %}
+                            <li><a href="mailto:{{ site.bellemarie.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                            {% endif %}
+                            <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
+                            {% if site.bellemarie.cv %}
+                            <li><a href="{{ site.bellemarie.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
+                            {% endif %}
+                        </ul>
+                </div>
             </div>
-	  
         </div>
         <!-- second two icons -->
         {% for icon in site.laurence.skill_icon2 %}

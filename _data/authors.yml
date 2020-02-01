@@ -1,0 +1,36 @@
+
+# author -- index page "about me" section
+francis:  # change following line to your infomation.
+  name: Francis - CTO/CMO/COO # Be used at blog posts' author.
+  first_name: francis  # Be used at index page about me section.
+  #last_name: Git  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/francis.jpg  # upload your avatar at directory and edit it.
+  github_username: fraka6  # Leave blank if you don't have now
+  linkedin_id: fpieraut # Leave blank if you don't have now
+  facebook_username: # Leave blank if you don't have now
+  twitter_username: # Leave blank if you don't have now
+  email: info@leschatonspelleteurs.ca  # Leave blank if you don't have now
+  cv: # An online CV can be printed as PDF, leave blank if you don't have now
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+    - name: icon-apache
+    - name: fa-linux
+  skill_icon2:
+    - name: fa-linux
+    - name: icon-apache
+  desc: We are the familypreneur of Lachine/Montreal/Quebec/Canada.  # Describe yourself.
+
+laurence:  # change following line to your infomation.
+  name: Laurence CEO # Be used at blog posts' author.
+  first_name: Laurence - CEO # Be used at index page about me section.
+  avatar: /static/assets/img/landing/laurence.png  # upload your avatar at directory and edit it.
+
+antoine:  # change following line to your infomation.
+  name: Antoine - CFO & Director Marketing# Be used at blog posts' author.
+  first_name: Antoine  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/antoine.png  # upload your avatar at directory and edit it.
+
+bellemarie:  # change following line to your infomation.
+  name: Belle Marie - Chief QA Officer # Be used at blog posts' author.
+  first_name: Belle Marie | Chief QA Officer  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/bellemarie.png  # upload your avatar at directory and edit it.

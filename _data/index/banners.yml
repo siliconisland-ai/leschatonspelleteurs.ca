@@ -2,8 +2,47 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/header_one.jpg
-  title: first banner image
 
-- src: landing/header_two.jpg
-  title: second banner image
+
+
+- src: landing/laurence-waiting-1024x768.jpg
+- src: landing/laurence-pelte-juliette-1024x768.jpg
+- src: landing/antoinedeneige-1024x768.jpg
+- src: landing/antoineneige-1024x768.jpg
+- src: landing/crazy-1024x768.jpg
+- src: landing/entree-1024x768.jpg
+- src: landing/fatigue-1024x768.jpg
+- src: landing/francisglace-1024x768.jpg
+- src: landing/ils-peltent-1024x768.jpg
+- src: landing/ils-peltent2-1024x768.jpg
+- src: landing/ils-peltent3-1024x768.jpg
+- src: landing/lachine-1024x768.jpg
+- src: landing/lachine2-1024x768.jpg
+- src: landing/lachine3-1024x768.jpg
+- src: landing/lachine4-1024x768.jpg
+- src: landing/lachine5-1024x768.jpg
+- src: landing/lachine6-1024x768.jpg
+- src: landing/laurencechat-1024x768.jpg
+- src: landing/laurenceglace-1024x768.jpg
+- src: landing/laurence-pelte-1024x768.jpg
+- src: landing/entree2-1024x768.jpg
+- src: landing/laurence-pelte2-1024x768.jpg
+- src: landing/laurence-pelte3-1024x768.jpg
+- src: landing/laurence-pelte-juliette-1024x768.jpg
+- src: landing/laurence-waiting-1024x768.jpg
+- src: landing/lespelleteurs-1024x768.jpg
+- src: landing/lespelleteurs2-1024x768.jpg
+- src: landing/neige-1024x768.jpg
+- src: landing/ouestmavoiture-1024x768.jpg
+- src: landing/ouestmavoiture2-1024x768.jpg
+- src: landing/pieds-1024x768.jpg
+- src: landing/shewin-1024x768.jpg
+- src: landing/team-1024x768.jpg
+- src: landing/team3-1024x768.jpg
+- src: landing/team4-1024x768.jpg
+- src: landing/team5-1024x768.jpg
+- src: landing/team6-1024x768.jpg
+- src: landing/team7-1024x768.jpg
+- src: landing/tropdeneige-1024x768.jpg
+- src: landing/velo-1024x768.jpg
+- src: landing/winter-1024x768.jpg

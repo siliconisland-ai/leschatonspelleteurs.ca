@@ -1,0 +1,13 @@
+convert -resize 1024X768 avatar.jpg avatar.1024x768.jpg
+convert -resize 1024X768 header_one.jpg header_one.1024x768.jpg
+convert -resize 1024X768 header_two.jpg header_two.1024x768.jpg
+convert -resize 1024X768 ils-peltent2.jpg ils-peltent2.1024x768.jpg
+convert -resize 1024X768 ils-peltent3.jpg ils-peltent3.1024x768.jpg
+convert -resize 1024X768 ils-peltent.jpg ils-peltent.1024x768.jpg
+convert -resize 1024X768 laurence-pelte2.jpg laurence-pelte2.1024x768.jpg
+convert -resize 1024X768 laurence-pelte3.jpg laurence-pelte3.1024x768.jpg
+convert -resize 1024X768 laurence-pelte.jpg laurence-pelte.1024x768.jpg
+convert -resize 1024X768 laurence-pelte-juliette.jpg laurence-pelte-juliette.1024x768.jpg
+convert -resize 1024X768 laurence-waiting.jpg laurence-waiting.1024x768.jpg
+convert -resize 1024X768 lespelleteurs2.jpg lespelleteurs2.1024x768.jpg
+convert -resize 1024X768 lespelleteurs.jpg lespelleteurs.1024x768.jpg

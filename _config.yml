@@ -40,7 +40,7 @@ laurence:  # change following line to your infomation.
 
 antoine:  # change following line to your infomation.
   name: Antoine - CFO/Director Marketing # Be used at blog posts' author.
-  first_name: Antoine - CFO Director Marketing  # Be used at index page about me section.
+  first_name: Antoine - CFO/Director Marketing  # Be used at index page about me section.
   avatar: /static/assets/img/landing/antoine.png  # upload your avatar at directory and edit it.
 
 bellemarie:  # change following line to your infomation.
